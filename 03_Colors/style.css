@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    color: #333;
+}
+
+.color-box {
+    width: 200px;
+    height: 100px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Color Names */
+.color-name-red {
+    background-color: red;
+}
+
+.color-name-green {
+    background-color: green;
+}
+
+.color-name-blue {
+    background-color: blue;
+}
+
+/* Hexadecimal Colors */
+.hex-color-ff0000 {
+    background-color: #ff0000;
+}
+
+.hex-color-00ff00 {
+    background-color: #00ff00;
+}
+
+.hex-color-0000ff {
+    background-color: #0000ff;
+}
+
+/* RGB Colors */
+.rgb-color-red {
+    background-color: rgb(255, 0, 0);
+}
+
+.rgb-color-green {
+    background-color: rgb(0, 255, 0);
+}
+
+.rgb-color-blue {
+    background-color: rgb(0, 0, 255);
+}
+
+/* RGBA Colors */
+.rgba-color-red {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.rgba-color-green {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.rgba-color-blue {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+/* HSL Colors */
+.hsl-color-red {
+    background-color: hsl(0, 100%, 50%);
+}
+
+.hsl-color-green {
+    background-color: hsl(120, 100%, 50%);
+}
+
+.hsl-color-blue {
+    background-color: hsl(240, 100%, 50%);
+}
+
+/* HSLA Colors */
+.hsla-color-red {
+    background-color: hsla(0, 100%, 50%, 0.5);
+}
+
+.hsla-color-green {
+    background-color: hsla(120, 100%, 50%, 0.5);
+}
+
+.hsla-color-blue {
+    background-color: hsla(240, 100%, 50%, 0.5);
+}
+
+/* Gradient Colors */
+.gradient-box {
+    width: 300px;
+    height: 100px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.linear-gradient {
+    background: linear-gradient(90deg, red, yellow);
+}
+
+.radial-gradient {
+    background: radial-gradient(circle, red, yellow);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

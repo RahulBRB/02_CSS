@@ -1,0 +1,24 @@
+ body{
+    padding:25%;
+    font-size:2rem;
+    font-family: cursive; 
+    /* for more fonts get it from google fonts */
+    
+ }
+
+ /* 
+ input,button{
+    font:inherit;
+ } 
+*/
+
+p{
+    text-decoration: none;
+
+    line-height:1.4;
+    letter-spacing: 1em;
+    word-spacing: 0.2em;
+
+    font-weight: bold;
+    font-style:italic;
+} 
