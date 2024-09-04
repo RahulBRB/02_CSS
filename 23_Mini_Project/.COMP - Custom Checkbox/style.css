@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --brand-color:#5128C6;
+}
+
+.checkbox{
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox-container label{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    border: 1px solid #C2C2C2;
+    border-radius: 4px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.checkbox-container label:hover{
+    border-color:var(--brand-color);
+    cursor:pointer;
+}
+/*
+.checkbox:checked + label =  This selector applies styles to the "label" that immediately follows a .checkbox element when that checkbox is checked. (IMMEDIATEDY)
+
+.checkbox.label = This selector applies styles to elements that have both the "checkbox" and "label" classes. (BOTH)
+
+.checkbox, label = This selector applies the same styles to all elements with the checkbox class and to all label elements. (ALL)
+
+.checkbox > label = This selector applies styles to label elements that are direct children of an element with the checkbox class. (DIRECT CHILDREN)
+*/
+
+.checkbox-container .checkbox:checked + label{
+    background-color: var(--brand-color);
+}
+
+.checkbox-container .checkbox:focus + label{
+    border-color: var(--brand-color);
+    outline: 2px solid #CFBFFF;
+}
+
+.checkbox-container .checkbox:focus + label, label:active{
+    border-color: var(--brand-color);
+    outline: 2px solid #CFBFFF;
+}
