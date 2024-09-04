@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+}
+
+.side-menu {
+    max-width: 400px;
+}
+
+.dropdown-menu{
+    width: 100%;
+    background-color: #5128c6;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    color: white;
+
+}
+
+.dropdown-menu input{
+    position: absolute;
+    opacity: 0;
+}
+
+.dropdown-name{
+    display: flex;
+    gap: 8px;
+}
+
+.dropdown-menu img{
+    transition: transform 0.25s ease-in-out;
+}
+
+/* will affect the img tag which is just after the input tag */
+.dropdown-menu input:checked + img{
+    transform: rotate(180deg);
+}
+
+.menu-items{
+    padding: 0px;
+    margin: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.08);
+    height: 0;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+    border-radius: 0 0 4px 4px;
+}
+
+.menu-items li{
+    list-style: none;
+    cursor: pointer;
+    padding: 8px 40px;
+}
+
+
+.menu-items li:hover{
+    background-color: #e5e5e5;
+}
+
+
+.dropdown:has(input:checked) .menu-items{
+    /* display: block; */
+    height:auto;
+}
+
+.dropdown:has(input:checked) .dropdown-menu{
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown + .dropdown {
+    margin-top: 5px;
+}
