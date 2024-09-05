@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="logo-container">
+          <img src="logo.svg" alt="logo" />
+          <span>Responsive Navbar</span>
+        </div>
+        <div class="hamburger-menu">
+          <label for="hamburger-checkbox"
+            ><img src="hamburger.svg" alt="hamburger"
+          /></label>
+        </div>
+        <input type="checkbox" id="hamburger-checkbox" />
+        <div class="nav-user-container">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li class="courses">
+                <span>Courses</span> <img src="./dropdown.svg" alt="dropdown" />
+                <ul>
+                  <li>
+                    <a href="#">Web Development</a>
+                  </li>
+                  <li>
+                    <a href="#">App Development</a>
+                  </li>
+                  <li>
+                    <a href="#">Data Science</a>
+                  </li>
+                  <li>
+                    <a href="#">Machine Learning</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="user">
+            <div class="user-icon">
+              <img src="User Avatar.svg" alt="avatar" />
+              <div class="green-dot"></div>
+            </div>
+            <span>Rahul B</span>
+            <label class="close-icon" for="hamburger-checkbox">
+              <img src="close.svg" alt="close-icon" />
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
