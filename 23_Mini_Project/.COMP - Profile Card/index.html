@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-strip"></div>
+    <div class="container">
+      <div class="profile-card">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+
+        <div class="icons-container">
+          <img src="Like-btn.svg" alt="Like" class="like-btn" />
+          <img
+            onclick="navigator.share({url:location.href})"
+            src="share.svg"
+            alt="Share"
+            class="share-btn"
+          />
+        </div>
+
+        <div class="profile-content">
+          <div class="avatar-container">
+            <img src="User Avatar.svg" alt="Avatar" class="avatar" />
+            <div class="green-dot"></div>
+          </div>
+
+          <h3 class="card-heading">Rahul B</h3>
+          <p class="card-subtitle">Frontend Developer</p>
+          <a href="#" target="_blank" class="view-profile-btn"
+            >View Full Profile</a
+          >
+
+          <div class="social-icons">
+            <img
+              class="social-icons-icon"
+              src="linkedin-square.svg"
+              alt="LinkedIn"
+            />
+            <img
+              class="social-icons-icon"
+              src="twitter-square.svg"
+              alt="Twitter"
+            />
+            <img
+              class="social-icons-icon"
+              src="telegram-square.svg"
+              alt="Telegram"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-strip"></div>
+  </body>
+</html>
